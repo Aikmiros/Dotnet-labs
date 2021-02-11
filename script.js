@@ -19,7 +19,7 @@ function buttonClicked(labId) {
 for(let i = 1; i <= LABS_DONE; i++){
   const button = document.createElement('button');
   button.className = "button-1";
-  button.innerHTML = "Лабораторна робота " + i;
+  button.innerHTML = "Лабораторна № " + i;
   button.onclick = buttonClicked.bind(null, i);
   buttonDiv.append(button);
 }
