@@ -1,12 +1,18 @@
 /* #Header1 {
   background-color: #98FB98;
 } */
-
+/* 
 #labDiv {
   padding-left: 35%;
+} */
+
+iframe {
+  padding: 5px;
+  border-style: none;
+  height: 500px;
 }
 
- .button-1 {
+.button-1 {
    background-color: #FF8C00;
    padding: 15px 32px;
    border-radius: 32px;

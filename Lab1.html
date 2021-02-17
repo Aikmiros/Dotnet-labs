@@ -3,7 +3,84 @@
   <head>
     <meta charset="utf-8">
     <title>Example</title>
+    <link rel="stylesheet" href="css/lab.css"/>
   </head>
   <body>
+    <div class="tab">
+      
+      <div class="dropup">
+        <button class="">First</button>
+        <div class="dropup-content">
+          <button class="tablinks" id="defaultOpen" onclick="openTab(event, '1-1')">1.1</button>
+          <button class="tablinks" onclick="openTab(event, '1-2')">1.2</button>
+          <button class="tablinks" onclick="openTab(event, '1-3')">1.3</button>
+        </div>
+      </div>
+
+      <div class="dropup">
+        <button class="">Second</button>
+        <div class="dropup-content">
+          <button class="tablinks" onclick="openTab(event, '2-1')">2.1</button>
+          <button class="tablinks" onclick="openTab(event, '2-2')">2.2</button>
+          <button class="tablinks" onclick="openTab(event, '2-3')">2.3</button>
+        </div>
+      </div>
+      
+      <div class="dropup">
+        <button class="">Third</button>
+        <div class="dropup-content">
+          <button class="tablinks" onclick="openTab(event, '3-1')">3.1</button>
+          <button class="tablinks" onclick="openTab(event, '3-2')">3.2</button>
+          <button class="tablinks" onclick="openTab(event, '3-3')">3.3</button>
+        </div>
+      </div>
+
+      <div class="dropup">
+        <button class="">Fourth</button>
+      </div>
+      
+    </div>
+    
+    <div id="1-1" class="tabcontent">
+      <h3>1-1</h3>
+    </div>
+    <div id="1-2" class="tabcontent">
+      <h3>1-2</h3>
+    </div>
+    <div id="1-3" class="tabcontent">
+      <h3>1-3</h3>
+    </div>
+
+    <div id="2-1" class="tabcontent">
+      <h3>2-1</h3>
+    </div>
+    <div id="2-2" class="tabcontent">
+      <h3>2-2</h3>
+    </div>
+    <div id="2-3" class="tabcontent">
+      <h3>2-3</h3>
+    </div>
+
+    <!-- <script src="./lab.js"></script> -->
+
+    <script>
+      function openTab(evt, name) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(name).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+  
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();      
+    </script>
+
   </body>
 </html>
