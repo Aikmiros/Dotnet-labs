@@ -9,16 +9,18 @@
     <div class="tab">
       
       <div class="dropup">
-        <button class="">First</button>
+        <button class="">1.	Характеристика об’єкта автоматизації</button>
         <div class="dropup-content">
-          <button class="tablinks" id="defaultOpen" onclick="openTab(event, '1-1')">1.1</button>
+          <button class="tablinks" id="defaultOpen" onclick="openTab(event, '1-1')">1.1. Опис предметного середовища</button>
           <button class="tablinks" onclick="openTab(event, '1-2')">1.2</button>
           <button class="tablinks" onclick="openTab(event, '1-3')">1.3</button>
+          <button class="tablinks" onclick="openTab(event, '1-4')">1.4</button>
+          <button class="tablinks" onclick="openTab(event, '1-5')">1.5</button>
         </div>
       </div>
 
       <div class="dropup">
-        <button class="">Second</button>
+        <button class="">2.	Об’єктно-орієнтована декомпозиція</button>
         <div class="dropup-content">
           <button class="tablinks" onclick="openTab(event, '2-1')">2.1</button>
           <button class="tablinks" onclick="openTab(event, '2-2')">2.2</button>
@@ -27,22 +29,62 @@
       </div>
       
       <div class="dropup">
-        <button class="">Third</button>
+        <button class="">3.	Проектування ПЗ</button>
         <div class="dropup-content">
           <button class="tablinks" onclick="openTab(event, '3-1')">3.1</button>
-          <button class="tablinks" onclick="openTab(event, '3-2')">3.2</button>
-          <button class="tablinks" onclick="openTab(event, '3-3')">3.3</button>
         </div>
       </div>
 
       <div class="dropup">
-        <button class="">Fourth</button>
+        <button class="">4. Кодування (програмування)</button>
+        <div class="dropup-content">
+          <button class="tablinks" onclick="openTab(event, '3-1')">4.1</button>
+          <button class="tablinks" onclick="openTab(event, '3-2')">4.2</button>
+        </div>
       </div>
+
+      <div class="dropup">
+        <button class="">5.	Впровадження та супроводження ПЗ</button>
+        <div class="dropup-content">
+          <button class="tablinks" onclick="openTab(event, '3-1')">5.1</button>
+          <button class="tablinks" onclick="openTab(event, '3-2')">5.2</button>
+          <button class="tablinks" onclick="openTab(event, '3-3')">5.3</button>
+        </div>
+      </div>
+
+      
       
     </div>
     
     <div id="1-1" class="tabcontent">
-      <h3>1-1</h3>
+      <h3>1.1. Опис предметного середовища</h3>
+      <p>Предметним середовищем цього проекту є моделювання роботи чат-додатку для спілкування користувачів системи.</p>
+      <p>Відкривши додаток, користувач можем авторизуватися в системі з існуючим логіном і паролем, 
+        або зареєструватися в системі вказавши логін(який також стане username користувача) і пароль.</p>
+      <p>Кожен користувач має наступні функції:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; •	Переглянути і змінити свої логін, пароль, статус<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; •	Переглянути список чатів, в яких користувач є учасником<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; •	Створити новий чат<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; •	Видалити себе з системи<br>
+      </p>
+      <p>Після авторизація користувач бачить список чатів, в яких приймає участь. 
+        Користувач може обрати уже створений чат або створити новий.</p>
+      <p>При створенні нового чату необхідно вказати його ім’я, і користувач, що створив чат стає його адміном. </p>
+      <p>Для кожного учасника чату доступні наступні функції:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; •	Переглянути історію чата<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; •	Написати повідомлення і відправити його в чат<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; •	Видалити своє повідомлення<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; •	Вийти з чату<br>
+      </p>
+      <p>Для адміну чата доступні всі функції звичайного учасника, плюс наступні функції:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; •	Змінити ім’я чату<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; •	Додати нового учасника, вказавши його username<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; •	Видалити учасника, вказавши його username<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; •	Видалити будь-яке повідомлення в чаті<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; •	Видалити історію чату<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; •	Видалити чат  <br>              
+      </p>
+      <p>Якщо адмін вийде з чату, чат автоматично видаляється.</p>
     </div>
     <div id="1-2" class="tabcontent">
       <h3>1-2</h3>
@@ -50,6 +92,13 @@
     <div id="1-3" class="tabcontent">
       <h3>1-3</h3>
     </div>
+    <div id="1-4" class="tabcontent">
+      <h3>1-4</h3>
+    </div>
+    <div id="1-5" class="tabcontent">
+      <h3>1-5</h3>
+    </div>
+
 
     <div id="2-1" class="tabcontent">
       <h3>2-1</h3>
@@ -61,7 +110,28 @@
       <h3>2-3</h3>
     </div>
 
-    <!-- <script src="./lab.js"></script> -->
+    
+    <div id="3-1" class="tabcontent">
+      <h3>3-1</h3>
+    </div>
+
+
+    <div id="4-1" class="tabcontent">
+      <h3>4-1</h3>
+    </div>
+    <div id="4-2" class="tabcontent">
+      <h3>4-2</h3>
+    </div>
+
+
+    <div id="5-1" class="tabcontent">
+      <h3>5-1</h3>
+    </div>
+
+
+
+
+
 
     <script>
       function openTab(evt, name) {

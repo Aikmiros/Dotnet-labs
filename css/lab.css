@@ -36,10 +36,9 @@ body {font-family: "Lato", sans-serif;}
 /* Style the tab content */
 .tabcontent {
   float: left;
-  padding: 0px 12px;
-  /* border: 1px solid #ccc; */
+  padding: 5px 25px;
+  /* border: 1px solid rgb(255, 123, 0); */
   width: 70%;
-  border-left: none;
 }
 
 
