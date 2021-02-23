@@ -1,4 +1,4 @@
-const LABS_DONE = 5;
+const LABS_DONE = 1;
 
 const buttonDiv = document.getElementById('buttonDiv1');
 const labDiv = document.getElementById('labDiv');
@@ -12,6 +12,7 @@ function buttonClicked(labId) {
   const lab = document.createElement('iframe');
   lab.src = `Lab${labId}.html`
   lab.style.width = "100%";
+  lab.style.height = "calc(100% - 170px)"
   currentLab = lab;
   labDiv.append(lab);
 }
@@ -23,3 +24,5 @@ for(let i = 1; i <= LABS_DONE; i++){
   button.onclick = buttonClicked.bind(null, i);
   buttonDiv.append(button);
 }
+
+buttonClicked(1);
