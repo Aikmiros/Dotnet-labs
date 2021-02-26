@@ -47,4 +47,4 @@ function openTab(name) {
   document.getElementById('button-' + name).className += ' active';
 }
 
-document.getElementById("button-1-1").click();
+document.getElementById("button-0-1").click();
