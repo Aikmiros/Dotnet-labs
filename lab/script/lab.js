@@ -11,12 +11,18 @@ for(const i in content){
   const button = document.createElement('button');
   button.innerHTML = content[i].name;
 
+  if(content[i].content.length === 0){
+    button.className = 'tablinks';
+    const name = `${i}-1`;
+    button.onclick = openTab.bind(null, name);
+    button.id = 'button-' + name;
+  }
+
   for(const j in content[i].content){
     const button = document.createElement('button');
     button.className = 'tablinks';
-    const k = + i + 2;
     const l = + j + 1;
-    const name = `${k}-${l}`;
+    const name = `${i}-${l}`;
     button.onclick = openTab.bind(null, name);
     button.id = 'button-' + name;
     button.innerHTML = content[i].content[j]
