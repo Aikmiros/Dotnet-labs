@@ -10,10 +10,11 @@ for(const i in content){
 
   const button = document.createElement('button');
   button.innerHTML = content[i].name;
+
   for(const j in content[i].content){
     const button = document.createElement('button');
     button.className = 'tablinks';
-    const k = + i + 1;
+    const k = + i + 2;
     const l = + j + 1;
     const name = `${k}-${l}`;
     button.onclick = openTab.bind(null, name);
