@@ -7,7 +7,12 @@
 } */
 
 body {
+<<<<<<< HEAD
   background-color: rgb(210 210 210 / 19%);
+=======
+  background-color: rgb(0 90 255 / 19%);
+  margin: 20px;
+>>>>>>> 9590c0c8cfb77a365ca1063dccc51e446f74b059
 }
 
 iframe {
