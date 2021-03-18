@@ -25,4 +25,4 @@ for(let i = 1; i <= LABS_DONE; i++){
   buttonDiv.append(button);
 }
 
-buttonClicked(1);
+buttonClicked(LABS_DONE);
