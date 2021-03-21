@@ -1,4 +1,4 @@
-const LABS_DONE = 2;
+const LABS_DONE = 3;
 
 const buttonDiv = document.getElementById('buttonDiv1');
 const labDiv = document.getElementById('labDiv');
