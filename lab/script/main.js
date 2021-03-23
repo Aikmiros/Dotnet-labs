@@ -10,9 +10,9 @@ function buttonClicked(labId) {
     currentLab.remove();
   }
   const lab = document.createElement('iframe');
-  lab.src = `lab/Lab${labId}.html`
+  lab.src = `lab/Lab${labId}.html`;
   lab.style.width = "100%";
-  lab.style.height = "calc(100% - 90px)"
+  lab.style.height = "calc(100% - 90px)";
   currentLab = lab;
   labDiv.append(lab);
 }

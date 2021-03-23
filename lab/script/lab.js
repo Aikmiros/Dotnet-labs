@@ -25,7 +25,7 @@ for(const i in content){
     const name = `${i}-${l}`;
     button.onclick = openTab.bind(null, name);
     button.id = 'button-' + name;
-    button.innerHTML = content[i].content[j]
+    button.innerHTML = content[i].content[j];
     contentDiv.append(button);
   }
   div.append(contentDiv);
