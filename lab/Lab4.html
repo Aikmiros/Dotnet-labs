@@ -23,15 +23,90 @@
         <li>Суханова Марія, номер залікової книжки: 9324</li>
         <li>Трембач Анастасія, номер залікової книжки: 9326</li>
       </ul>
-      <h4>Класи з методами-властивостями</h4>
+      <h4>Класи з методами перевантаження операторів</h4>
       <ul>
         <li>
-          Клас ChatRoom має такі методи перевантаження операторів: <br>
+          Клас ChatRoom має такі методи перевантаження операторів: 
           <ul>
+            <br>
+            Унарні оператори:
+
             <li>
-              
+              <p>
+                <b>public static bool operator! (ChatRoom)</b><br>
+                Оператор визначає, чи пустий перелік учасників чата
+              </p>
             </li>
-            
+
+            <li>
+              <p>
+                <b>public static bool operator true(ChatRoom)</b><br>
+                Метод повертає позитивне значення, якщо кількість учасників чата &gt; 0
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <b>public static bool operator false(ChatRoom)</b><br>
+                Метод повертає позитивне значення, якщо кількість учасників чата == 0
+              </p>
+            </li>
+
+            Бінарні оператори:
+
+            <li>
+              <p>
+                <b>public static ChatRoom operator+ (ChatRoom, int)</b><br>
+                Оператор дозволяє додати учасника в чат
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <b>public static ChatRoom operator- (ChatRoom, int)</b><br>
+                Оператор дозволяє видалити учасника з чата
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <b>public static ChatRoom operator+ (ChatRoom, Message)</b><br>
+                Оператор дозволяє додати повідомлення в чат
+              </p>
+            </li>
+
+            Оператори порівняння:
+
+            <li>
+              <p>
+                <b>public static bool operator&gt; (ChatRoom, ChatRoom)</b><br>
+                Оператор дозволяє видалити учасника з чата
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <b>public static bool operator&lt; (ChatRoom, ChatRoom)</b><br>
+                Оператор дозволяє видалити учасника з чата
+              </p>
+            </li>
+
+            Логічні оператори:
+
+            <li>
+              <p>
+                <b>public static ChatRoom operator & (ChatRoom, ChatRoom)</b><br>
+                Метод повертає новий чат з перетином множин учасників чатів
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <b>public static ChatRoom operator | (ChatRoom, ChatRoom)</b><br>
+                Метод повертає новий чат з об'єднанням множин учасників чатів
+              </p>
+            </li>
+
           </ul>
         </li>
 
