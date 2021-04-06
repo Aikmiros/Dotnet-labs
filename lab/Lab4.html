@@ -113,10 +113,62 @@
         <li>
           Клас UserAccount має такі методи перевантаження операторів: <br>
           <ul>
+            <br>
+            Унарні оператори:
+
             <li>
-              
+              <p>
+                <b>public static UserAccount operator ++(UserAccount user)</b><br>
+                Оператор дозволяє збільшити ранг користувача на 1
+              </p>
             </li>
-            
+
+            <li>
+              <p>
+                <b>public static UserAccount operator --(UserAccount user)</b><br>
+                Оператор дозволяє зменшити ранг користувача на 1
+              </p>
+            </li>
+
+            Бінарні оператори:
+
+            <li>
+              <p>
+                <b>public static UserAccount operator+ (UserAccount user, string status)</b><br>
+                Оператор дозволяє додати текст до статусу користувача
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <b>public static UserAccount operator+ (UserAccount user, ChatRoom chat)</b><br>
+                Оператор дозволяє додати учасника в чат
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <b>public static UserAccount operator- (UserAccount user, ChatRoom chat)</b><br>
+                Оператор дозволяє видалити учасника з чата
+              </p>
+            </li>
+
+            Оператори порівняння:
+
+            <li>
+              <p>
+                <b>public static bool operator &gt;(UserAccount user1, UserAccount user2)</b><br>
+                Оператор дозволяє порівнянти ранг користувачів
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <b>public static bool operator >(UserAccount user1, UserAccount user2)</b><br>
+                Оператор дозволяє порівнянти ранг користувачів
+              </p>
+            </li>
+
           </ul>
         </li>
 
