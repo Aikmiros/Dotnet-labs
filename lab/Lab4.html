@@ -26,7 +26,7 @@
       <h4>Класи з методами перевантаження операторів</h4>
       <ul>
         <li>
-          Клас ChatRoom має такі методи перевантаження операторів: 
+          Клас ChatRoom має такі методи перевантаження операторів:
           <ul>
             <br>
             Унарні оператори:
@@ -175,10 +175,76 @@
         <li>
           Клас Message  має такі методи перевантаження операторів: <br>
           <ul>
+            <br>
+            Унарні оператори:
+
             <li>
-              
+              <p>
+                <b>public static Message operator ++(Message)</b><br>
+                Оператор дозволяє збільшити id автора повідомлення на 1
+              </p>
             </li>
-            
+
+            <li>
+              <p>
+                <b>public static Message operator --(Message)</b><br>
+                Оператор дозволяє зменшити id автора повідомлення на 1
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <b>public static bool operator !(Message)</b><br>
+                Оператор визначає, чи пусте тіло повідомлення
+              </p>
+            </li>
+
+              Бінарні оператори:
+
+            <li>
+              <p>
+                <b>public static bool operator +(Message, body)</b><br>
+                Оператор дозволяє додавати текст до повідомлення
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <b>public static bool operator +(Message, Message)</b><br>
+                Оператор дозволяє зливати два повідомлення в одне
+              </p>
+            </li>
+
+            Оператори порівняння:
+
+            <li>
+              <p>
+                <b>public static bool operator <(Message, Message)</b><br>
+                Оператор дозволяє порівняти розмір повідомлень
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <b>public static bool operator >(Message, Message)</b><br>
+                Оператор дозволяє порівняти розмір повідомлень
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <b>public static bool operator ==(Message, Message)</b><br>
+                Оператор дозволяє дізнатись чи однакові повідомлення
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <b>public static bool operator !=(Message, Message)</b><br>
+                Оператор дозволяє дізнатись чи однакові повідомлення
+              </p>
+            </li>
+
           </ul>
         </li>
       </ul>
@@ -213,27 +279,41 @@
       <h3>Перевантаження унарних операторів</h3>
       <p>Клас UserAccount</p>
       <img src="./img/lab4/userAccount_unar.png">
+      <p>Клас ChatRoom</p>
+      <img src="./img/lab4/chatRoom_unar.png">
+      <p>Клас Message</p>
+      <img src="./img/lab4/message_unar.png">
     </div>
 
     <div id="3-2" class="tabcontent">
       <h3>Перевантаження бінарних операторів</h3>
       <p>Клас UserAccount</p>
       <img src="./img/lab4/userAccount_binar.png">
+      <p>Клас ChatRoom</p>
+      <img src="./img/lab4/chatRoom_binar.png">
+      <p>Клас Message</p>
+      <img src="./img/lab4/message_binar.png">
     </div>
 
     <div id="3-3" class="tabcontent">
       <h3>Перевантаження логічних операторів</h3>
+      <p>Клас ChatRoom</p>
+      <img src="./img/lab4/chatRoom_logic.png">
 
       <h3>Перевантаження операторів порівняння</h3>
       <p>Клас UserAccount</p>
       <img src="./img/lab4/userAccount_porivn.png">
+      <p>Клас ChatRoom</p>
+      <img src="./img/lab4/chatRoom_comp.png">
+      <p>Клас Message</p>
+      <img src="./img/lab4/message_comp.png">
     </div>
 
     <div id="3-4" class="tabcontent">
       <h3>Файлова структура проекту</h3>
       <img src="./img/lab1/lab1_files.png">
     </div>
-    
+
 
 
     <div id="4-1" class="tabcontent">
